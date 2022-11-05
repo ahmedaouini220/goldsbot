@@ -1323,7 +1323,7 @@ client.on('messageCreate', async (message) => {
 ////
 
 client.on("messageCreate", (yahya) => {
-  if (yahya.channel.id != "1018442710098653257") return;
+  if (yahya.channel.id != "1038493224874037349") return;
   if (yahya.author.bot) return; {
     var embed = new MessageEmbed()
       .setDescription(`> <a:ss_3:1016805756697321533> 𝗧𝗵𝗮𝗻𝗸𝘀 𝗙𝗼𝗿 𝗬𝗼𝘂𝗿 𝗙𝗲𝗲𝗱𝗕𝗮𝗰𝗸 <a:a2_heartblue:1016816415707242577>
@@ -2429,5 +2429,8 @@ let embed_1 = new MessageEmbed()
   }
 });    
 
+
+
+});
 
 client.login(process.env.TOKEN)

@@ -67,7 +67,7 @@ let applyteamcategory = "997637252509335572"
 let ordercategory = "1025188189645852722"
 const line = "https://media.discordapp.net/attachments/1033349535990300762/1038574548402065468/line_ofc.gif"///url line link
 
-let color = "#620A8A"
+let color = "RANDOM"
 
 /////
 

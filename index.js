@@ -5,7 +5,7 @@ setTimeout(() => {
   } else {
     console.log("Client Login")
   }
-}, 3*1000*60); 
+}, 3*1000*60);
 
 
 
@@ -1130,7 +1130,7 @@ client.on('messageCreate', async (message) => {
     amount = Math.floor(amount / 0.95) + 1
 
     message.reply(`<:_Fix:1038430600291426344> __**${amount}**__ `)
-    message.reply(line)
+    message.channel.send(line)
 
     return
   }

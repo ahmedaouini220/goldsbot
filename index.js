@@ -2431,6 +2431,6 @@ let embed_1 = new MessageEmbed()
 
 
 
-});
+);
 
 client.login(process.env.TOKEN)

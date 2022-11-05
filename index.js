@@ -170,7 +170,13 @@ client.on("messageCreate", (yahya) => {
   }
 })
 //
-
+client.on("messageCreate", (yahya) => {
+  if (yahya.content.startsWith(".")) {
+    let YAHYA = [`** السلام عليكم معك الاداري <@${yahya.author.id}> **`]
+    yahya.reply(YAHYA[Math.floor(Math.random() * YAHYA.length)])
+  }
+})
+//
 
   
 //
@@ -611,7 +617,7 @@ if (!message.channel.guild) return;
                 message.channel.permissionOverwrites.edit(everyone, {
                         SEND_MESSAGES: false
                 }).then(() => {
-                        message.reply({ content: `**تـم قـفل الـروم بـنجاح** <a:aArabShare_a:1016801916119953569>`, ephemeral: true }).catch((err) => {
+                        message.reply({ content: `**تـم قـفل الـروم بـنجاح** 🔒`, ephemeral: true }).catch((err) => {
                                 console.log(`i couldn't reply to the message: ` + err.message)
                         })
                 })
@@ -641,7 +647,7 @@ if (!message.channel.guild) return;
                 message.channel.permissionOverwrites.edit(everyone, {
                         SEND_MESSAGES: true
                 }).then(() => {
-                        message.reply({ content: `**تـم فـتح الـروم بـنجاح** <a:aArabShare_a:1016801916119953569>`, ephemeral: true })
+                        message.reply({ content: `**تـم فـتح الـروم بـنجاح** 🔓`, ephemeral: true })
                 })
     }
 }); 
@@ -884,11 +890,11 @@ client.on("messageCreate", (yahya) => {
     if (!user) return yahya.reply(`** منشن للشخص** `)
     yahya.delete()
     yahya.channel.send(`**
-> <a:ss_3:1016809145032265840>・برجاء عمل فيد باك للسيلر ${user}   <a:aHINDdance:1016828299244228729> 
+> <a:983154473667035207:1038428647197003839>・برجاء عمل فيد باك للسيلر ${user} <a:2_:1038428627135627344> 
 
-> ・شكرا لاستخدام السيرفر الخاص بنا <a:emoji_157:1016798780697354340>
+> ・شكرا لاستخدام السيرفر الخاص بنا <:COULDCOMMUNITY:1027886220157669396>
 **`).then(y => {
-      y.react("<a:emoji_211:1016830031214936134>")
+      y.react("1030886664442220594")
     })
     yahya.delete()
   }

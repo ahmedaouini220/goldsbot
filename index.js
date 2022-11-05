@@ -758,7 +758,7 @@ client.on("messageCreate", async message => {
     }
   }
 });
-//////tax
+//////
 const probot = require("probot-tax");
 const { MessageActionRow } = require('discord.js');
 const { request } = require('express');
@@ -1129,7 +1129,8 @@ client.on('messageCreate', async (message) => {
 
     amount = Math.floor(amount / 0.95) + 1
 
-    message.reply(`<a:wdaira:1016837362074005575> __**${amount}**__ `)
+    message.reply(`<:_Fix:1038430600291426344> __**${amount}**__ `)
+    message.reply(line)
 
     return
   }

@@ -65,7 +65,7 @@ var creditrole = "<@&1020687337878978560>"
 var tiktokrole = "<@&1014589961669980201>"
 let applyteamcategory = "997637252509335572"
 let ordercategory = "1025188189645852722"
-const line = "https://cdn.discordapp.com/attachments/972261795551121441/1030011198982328351/91_7EF5374.gif"///url line link
+const line = "https://media.discordapp.net/attachments/1033349535990300762/1038546771388923934/line.jpg"///url line link
 
 let color = "#620A8A"
 
@@ -871,7 +871,7 @@ yahya.channel.send({ embeds: [embed], content: `> <@!${yahya.author.id}> <a:emoj
   }
 })
 
-//////////////feed back
+//////////////back
 
 
 
@@ -1326,8 +1326,8 @@ client.on("messageCreate", (yahya) => {
   if (yahya.channel.id != "1038493224874037349") return;
   if (yahya.author.bot) return; {
     var embed = new MessageEmbed()
-      .setDescription(`> <a:ss_3:1016805756697321533> 𝗧𝗵𝗮𝗻𝗸𝘀 𝗙𝗼𝗿 𝗬𝗼𝘂𝗿 𝗙𝗲𝗲𝗱𝗕𝗮𝗰𝗸 <a:a2_heartblue:1016816415707242577>
-> <a:aYOGA:1016847893673558056> 𝗔𝗻𝗱 𝗨𝘀𝗶𝗻𝗴 "${yahya.guild.name}"  <a:emoji_157:1016798780697354340>`)
+      .setDescription(`> <:emoji_heart:1030886664442220594> 𝗧𝗵𝗮𝗻𝗸𝘀 𝗙𝗼𝗿 𝗬𝗼𝘂𝗿 𝗙𝗲𝗲𝗱𝗕𝗮𝗰𝗸 <a:2_:1038428627135627344>
+> <:COULDCOMMUNITY:1027886220157669396> 𝗔𝗻𝗱 𝗨𝘀𝗶𝗻𝗴 "${yahya.guild.name}"  <a:vssparkly1:1030854566146744451> `)
 
       .setColor(color)
       .setImage(line)
@@ -2198,7 +2198,7 @@ client.on('channelCreate', message => {
 
         > \`3\` <a:emoji_30:1016805946233737276> **Please Write The Number Of Servers You Are Working in**
 
-        > \`4\` <a:emoji_30:1016805946233737276> **Please Send Feedbacks , Number : __20__**
+        > \`4\` <a:emoji_30:1016805946233737276> **Please Sends , Number : __20__**
 
         > \`5\` <a:emoji_30:1016805946233737276> **Please Write The Names Of Servers You Are Working in**
 

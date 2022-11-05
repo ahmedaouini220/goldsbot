@@ -482,7 +482,7 @@ if (yahya.content.startsWith(prefix + "معاك")){
 > معاك ( __<@${yahya.author.id}>__ ) من طاقم عمل السيرفر ازاي اقدر اساعد حضرتك .؟ 
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 > welcome in "${yahya.guild.name}" <a:983154473667035207:1038428647197003839>
-> With You ( __${args}__ ) from the server staff, how can I help you ? <a:vssparkly1:1030854566146744451> **`})
+> With You ( __<@${yahya.author.id}>__ ) from the server staff, how can I help you ? <a:vssparkly1:1030854566146744451> **`})
   yahya.delete();
 }})
 

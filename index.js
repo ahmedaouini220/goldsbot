@@ -472,14 +472,14 @@ client.on("messageCreate", message => {
 client.on("messageCreate", yahya => {
 if (yahya.content.startsWith(prefix + "معاك")){
   if (yahya.author.bot) return
-  var args = yahya.content.split(" ")[1];
+  /*var args = yahya.content.split(" ")[1];
   if (!args) return yahya.channel.send(`**
 > Plz Type Your Name
-> برجاء كتابه اسمك **`);
+> برجاء كتابه اسمك **`);*/
   yahya.channel.send({ content:`**
 > اهلا بك في "${yahya.guild.name}" <a:983154473667035207:1038428647197003839>
  
-> معاك ( __${args}__ ) من طاقم عمل السيرفر ازاي اقدر اساعد حضرتك .؟ 
+> معاك ( __<@${yahya.author.id}>__ ) من طاقم عمل السيرفر ازاي اقدر اساعد حضرتك .؟ 
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 > welcome in "${yahya.guild.name}" <a:983154473667035207:1038428647197003839>
 > With You ( __${args}__ ) from the server staff, how can I help you ? <a:vssparkly1:1030854566146744451> **`})

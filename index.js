@@ -2460,6 +2460,7 @@ client.on('messageCreate', async message => {
          .addComponents([Menu])
       message.channel.send({ embeds: [embed], components: [Component] })
   }
+})
 	client.on('interactionCreate', async interaction => {
   if(interaction.isSelectMenu()) {
       if(interaction.customId === 'Info') {
@@ -2481,7 +2482,7 @@ client.on('messageCreate', async message => {
       }
   }
 })
-})
+
 
 
 client.login(process.env.TOKEN)

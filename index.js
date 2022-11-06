@@ -2437,7 +2437,51 @@ let embed_1 = new MessageEmbed()
 });    
 
 
-
+client.on('messageCreate', async message => {
+  if(message.content.startsWith(prefix + 'info-map')) {
+     message.delete()
+      if(!owner.includes(message.author.id)) return;
+       let embed = new Discord.MessageEmbed()
+      .setColor("#ff0000")
+      .setDescription(`> **معلومات كل فئة في السيرفر كل فئه بتحتوي على كل روم بتعمل ايه في السيرفر**`)
+    .setImage("https://media.discordapp.net/attachments/1033349535990300762/1038799285443121212/banner.jpg")
+      let Menu = new MessageSelectMenu()
+        .setCustomId('Info')
+        .setPlaceholder('Choose a Category List')
+        .setOptions([
+        { label: 'معلومات السيرفر', value: '1', description: 'Category info : Server info', emoji: '<:info:1032102614541795369>'},
+        { label: 'العامة', value: '2', description: 'Category info : General', emoji: '<:public:998986081464754296>' },
+        { label: 'العروض', value: '3', description: 'Category info : Offers', emoji: '<:store:1010609222238605392>'},
+        { label: 'التكتات', value: '4', description: 'Category info : Tickets', emoji: '<:ticket:1032102847162097694>'},
+        { label: 'الاقتراحات و الاراء', value: '5', description: 'Category info : Opinion And', emoji: '<:opinion:1032115997735407707>'},
+        { label: 'تقديم للادارة', value: '6', description: 'Category info : Apply To Team', emoji: '<:logo:1030553710570516601>'},
+        ])
+      let Component = new MessageActionRow()
+         .addComponents([Menu])
+      message.channel.send({ embeds: [embed], components: [Component] })
+  }
+	client.on('interactionCreate', async interaction => {
+  if(interaction.isSelectMenu()) {
+      if(interaction.customId === 'Info') {
+          if(interaction.values[0] === '1') {
+              interaction.reply({ content: '> <#1036263614157430824> : دي روم فيه كل القونين الخاصه بي السيرفر\n> <#1036272105022566430> : دي روم معلومات عن السيرفر جميع اخباره\n <#1029436041255452793> : دي روم تعزيز البوستات', ephemeral: true })
+          } else if(interaction.values[0] === '2') {
+              interaction.reply({ content: '> <#1036263337979285624> : دي روم ترحيب ليه اي حد يخش السيرفر\n > <#1038710404572004403> : دي روم الشات العام\n > <#1038710561237647360> : دي روم اوامر الروبوتات والاوامر عامه\n > <#1035566674117664799> : دي روم الجيف اوي\n > <#1038357583817343017> : دي روم عشان تعرف معلومات الرتب\n > <#1038347787403792384> : دي الروم عشان تعرف معلومات الرومات الخاصة\n > ', ephemeral: true })
+          } else if(interaction.values[0] === '3') {
+            
+              interaction.reply({ content: '> <#1037027372060389426> <#1037027244784222318> <#1037027152673112195> <#1037027084956074055> <#1037026953716310096> <#1037026894874419282> <#1037026744781246626> <#1037026665294991451> <#1037026087236026429> <#1037026578892324974>: دي رومات العروض\n > <#1036307964019101717> : دي روم قم اختيار الاشعارات التي تناسبك', ephemeral: true })
+          } else if(interaction.values[0] === '4') {
+              interaction.reply({ content: '> <#1036284848014372965> : دي روم تكت الدعم الفني\n > <#1036283888957394974> : دي روم تيكت الوسيط\n > <#1029449661133639762> : دي روم ضريبه بروبوت\n > <#1031040158138650705> : دي روم تحويلات الكريدت', ephemeral: true })
+          } else if(interaction.values[0] === '5') {
+              interaction.reply({ content: '> <#1038493224874037349> : دي روم شكر الاشخاص\n > <#1036276203281190962> : دي روم اقتراحات', ephemeral: true })   
+            
+          }  else if(interaction.values[0] === '6') {
+              interaction.reply({ content: '> <#> : دي روم التقديم على البائعين\n > <#1036284848014372965> : دي روم التقديم على الوسطاء', ephemeral: true })   
+          }
+      }
+  }
+})
+})
 
 
 client.login(process.env.TOKEN)

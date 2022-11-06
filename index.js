@@ -2439,7 +2439,6 @@ let embed_1 = new MessageEmbed()
 
 client.on('messageCreate', async message => {
   if(message.content.startsWith(prefix + 'info-map')) {
-     message.delete()
       if(!owner.includes(message.author.id)) return;
        let embed = new Discord.MessageEmbed()
       .setColor("#ff0000")

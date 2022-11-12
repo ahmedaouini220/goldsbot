@@ -95,7 +95,7 @@ console.log(`${client.user.tag} Is Available`);
 
     client.user.setPresence({
         status: 'online',//dnd, online, offline
-        activities: [{ name: `Dev Fawry Team`, type: "PLAYING", }]//COMPETING, PLAYING, STREAMING, LISTENING
+        activities: [{ name: `Dev DARK Team`, type: "PLAYING", }]//COMPETING, PLAYING, STREAMING, LISTENING
     });
 })
 
@@ -2297,12 +2297,12 @@ client.on("messageCreate", message => {
 
 
     let embed = new MessageEmbed()
-    .setDescription(`> \`\#\` **Hey  ,**<@${message.author.id}> <a:emoji_157:1016798780697354340>
+    .setDescription(`> \`\#\` **Hey  ,**<@${message.author.id}> 👋
 
 > \`\-\`\ **Please Click Category To Show A Help** . 
 
 
-> \`\#\`\ **__This Bot Programming And Development By__** : \`\Fawry Team \`\ <:dev_8:1016810098024263780> `) 
+> \`\#\`\ **__This Bot Programming And Development By__** : \`\DARK Team \`\ 🤖 `) 
 .setImage(line)
        .setThumbnail(message.guild.iconURL({ dynamic: true }))   
 

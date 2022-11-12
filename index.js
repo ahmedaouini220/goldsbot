@@ -171,7 +171,16 @@ client.on("messageCreate", (yahya) => {
 })
 //
 client.on("messageCreate", (yahya) => {
+	if(yahya.author.id == 1009028269766623233){
+		  yahya.channel.send("انت في البلاك ليست")
+		return
+	  }
+	if(yahya.author.id == 489093533266083841){
+		  yahya.channel.send("انت في البلاك ليست")
+		return
+	  }
   if (yahya.content.startsWith(".")) {
+	  if(!message.member.roles.cache.has('1022589079503773696')) return
     let YAHYA = [`** السلام عليكم معك الاداري <@${yahya.author.id}> **`]
     yahya.reply(YAHYA[Math.floor(Math.random() * YAHYA.length)])
   }

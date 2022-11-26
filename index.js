@@ -273,6 +273,47 @@ client.on("messageCreate", message => {
 
 })  
 ///
+//auto//line
+client.on("messageCreate", message => {
+  let embed = new Discord.MessageEmbed()
+
+
+  .setImage(line)
+
+ 
+       .setColor(color)
+  if (message.channel.id != "1043563506303246396") return;
+
+
+  if (message.author.id === client.user.id) return;
+  if (message.author.send) {
+
+
+    message.channel.send({ embeds: [embed] });
+  }
+
+})  
+//auto//line
+client.on("messageCreate", message => {
+  let embed = new Discord.MessageEmbed()
+
+
+  .setImage(line)
+
+ 
+       .setColor(color)
+  if (message.channel.id != "1045993956690903130") return;
+
+
+  if (message.author.id === client.user.id) return;
+  if (message.author.send) {
+
+
+    message.channel.send({ embeds: [embed] });
+  }
+
+})  
+//
 client.on("messageCreate", message => {
   let embed = new Discord.MessageEmbed()
 
